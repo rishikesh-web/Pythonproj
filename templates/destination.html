@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registeration</title>
+    <meta name='viewport' content='width=device-width, initial scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <p>Day 1 Arrival in Goa</p>
+        <p>Day 2 Sightseeing in North Goa</p>
+        <p>Day 3 Sightseeing in South Goa</p>
+        <p>Day 4 Excursion to Dudhsagar Waterfalls</p>
+        <p>Day 5 - 6 Discover Goa at your complete Leisure (no transport)</p>
+        <p>Day 7 Goa Departure</p>
+    <h1>Show a Date Control</h1>
+
+<form action="logout" method=post>
+    {% csrf_token %}
+  <label for="Booking Date">Booking Date:</label>
+  <input type="date" id="birthday" name="birthday">
+  <input type="submit">
+</form>
+
+<p><strong>Note:</strong> type="date" is not supported in Safari or Internet Explorer 11 (or earlier).</p>
+
+</body>
+</html>

@@ -258,14 +258,15 @@
 						<!-- Destination -->
 						<div class="destination item">
 							<div class="destination_image">
-								<img src="{{dest.img.url}}" alt="">
-
+								<a href="https://isharethese.com/tag/{{dest.name}}">
+								<img src="{{dest.img.url}}" width="285" height="175" alt="">
+								</a>
 								{% if dest.offer %}
 								<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
 								{% endif %}
 							</div>
 							<div class="destination_content">
-								<div class="destination_title"><a href="destinations.html">{{dest.name}}</a></div>
+								<div class="destination_title"><a href="accounts/destination">{{dest.name}}</a></div>
 								<div class="destination_subtitle"><p>{{dest.dest}}</p></div>
 								<div class="destination_price">From ${{dest.price}}</div>
 							</div>
